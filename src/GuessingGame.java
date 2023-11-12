@@ -17,7 +17,7 @@ public class GuessingGame {
         String name = input.nextLine();
 
         Random random = new Random();
-        int number = random.nextInt(100);
+        int number = random.nextInt(100)+1;
 
         System.out.println(name + " I'm thinking of a number between 1 and 100.");
         System.out.println("Can you guess what the number is?");
