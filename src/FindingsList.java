@@ -42,7 +42,11 @@ public class FindingsList {
 
         String fossilChoice = input.nextLine().toUpperCase();
 
-        System.out.println("Fossil: " + fossilChoice + "\nDescription: " + fossilDirectory.get(fossilChoice));
+        if (fossilDirectory.containsKey(fossilChoice)) {
+            System.out.println("Fossil: " + fossilChoice + "\nDescription: " + fossilDirectory.get(fossilChoice));
+        } else {
+            System.out.println("Fossil code does not exist");
+        }
 
         Thread.sleep(700);
 
